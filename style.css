@@ -1,0 +1,114 @@
+:root {
+  --bg-color: #292946;
+  --text-color: #ffffff;
+  --card-color: #37375c;
+  --button-color: #00bcd4;
+  --button-hover: #0097a7;
+}
+
+.light-mode {
+  --bg-color: #e6ffee;
+  --text-color: #0b3d0b;
+  --card-color: #c7f9cc;
+  --button-color: #26a96c;
+  --button-hover: #1e7f56;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.3s ease;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background: var(--card-color);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0, 188, 212, 0.2);
+  width: 400px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#themeToggle {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+button {
+  background: var(--button-color);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--button-hover);
+}
+
+.task-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#taskList li {
+  background: var(--bg-color);
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+#taskList li.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task-buttons button {
+  background: transparent;
+  color: var(--button-color);
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}

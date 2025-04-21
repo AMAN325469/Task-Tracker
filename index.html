@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="dark-mode">
+  <div class="container">
+    <div class="header">
+      <h1>📝 Task Tracker</h1>
+      <button id="themeToggle" onclick="toggleTheme()">🌙</button>
+      
+    </div>
+
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Enter your task..." />
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <div class="task-info">
+      <p>Total Tasks: <span id="totalCount">0</span></p>
+      <p>Remaining: <span id="pendingCount">0</span></p>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
